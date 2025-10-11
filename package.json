@@ -1,0 +1,39 @@
+{
+  "name": "react-native-iam-package",
+  "version": "0.1.0",
+  "description": "Reusable IAM for React Native apps (Expo-friendly): JWT login, refresh, secure storage, Axios client, Zustand store.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "sideEffects": false,
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "lint": "eslint src --ext .ts,.tsx",
+    "format": "prettier --write .",
+    "clean": "rm -rf dist"
+  },
+  "peerDependencies": {
+    "react": ">=18",
+    "react-native": ">=0.72",
+    "expo-secure-store": ">=13.0.0",
+    "axios": ">=1.6.0",
+    "zustand": ">=4.4.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.5.4",
+    "@typescript-eslint/eslint-plugin": "^7.16.1",
+    "@typescript-eslint/parser": "^7.16.1",
+    "eslint": "^9.6.0",
+    "eslint-config-prettier": "^9.1.0",
+    "prettier": "^3.3.3"
+  },
+  "keywords": [
+    "react-native",
+    "expo",
+    "auth",
+    "jwt",
+    "axios",
+    "zustand",
+    "secure-store"
+  ]
+}
