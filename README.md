@@ -21,6 +21,8 @@ Zustand + Axios + SecureStore; login/refresh; hook-based API.
 - **Secure Storage** → SecureStore for tokens
 - **HTTP Client** → Axios with interceptors
 - **TypeScript** → Type-safe development
+- **Styled Components** → CSS-in-JS styling
+- **VS Code Integration** → Extensions, settings, and Plop generators
 
 ---
 
@@ -30,7 +32,9 @@ Zustand + Axios + SecureStore; login/refresh; hook-based API.
 src/
  ├─ screens/        # React Native screens
  ├─ shared/         # API client, notifications, utilities
- └─ store/          # Zustand state management
+ ├─ store/          # Zustand state management
+ ├─ components/     # Reusable UI components
+ └─ hooks/          # Custom React hooks
 ```
 
 **Patterns used:**
@@ -39,6 +43,8 @@ src/
 - **Axios** → HTTP client with interceptors
 - **Expo** → cross-platform development
 - **SecureStore** → secure token storage
+- **Styled Components** → CSS-in-JS styling
+- **TypeScript** → type-safe development
 
 ---
 
@@ -48,6 +54,8 @@ src/
 - State management and API integration patterns
 - Secure token storage and authentication flows
 - Modern React Native development practices
+- VS Code integration and development tooling
+- Component-based architecture with styled-components
 
 ---
 
@@ -74,6 +82,11 @@ npx expo run:ios
 npx expo run:android
 ```
 
+**Generate Components:**
+```bash
+npm run plop
+```
+
 ---
 
 ## 🧪 Testing
@@ -85,6 +98,7 @@ npm test
 - Unit → components and utilities
 - Integration → API interactions
 - E2E → user flows
+- Component → UI component testing with React Native Testing Library
 
 ---
 
