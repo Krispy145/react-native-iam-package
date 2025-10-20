@@ -9,7 +9,7 @@ Zustand + Axios + SecureStore; login/refresh; hook-based API.
 - **Status:** scaffolded (Scaffolded)
 - **Focus:** Zustand + Axios + SecureStore; login/refresh; hook-based API.
 - **Last updated:** 13/10/2025
-- **Target completion:** 25/10/2025
+- **Target completion:** 27/10/2025
 
 ---
 
@@ -115,8 +115,8 @@ npm test
 
 | Milestone                    | Category              | Target Date | Status     |
 | ---------------------------- | --------------------- | ----------- | ---------- |
-| Scaffold package | React Native | 11/10/2025 | ✅ Done |
-| Core flows (login/refresh/logout) | React Native | 18/10/2025 | ⏳ In Progress |
+| Scaffold package | React Native | 26/10/2025 | ✅ Done |
+| Core flows (login/refresh/logout) | React Native | 26/10/2025 | ⏳ In Progress |
 | Docs + usage examples | React Native | 25/10/2025 | ⏳ In Progress |
 
 
