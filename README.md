@@ -8,7 +8,7 @@ Zustand + Axios + SecureStore; login/refresh; hook-based API.
 
 - **Status:** scaffolded (Scaffolded)
 - **Focus:** Zustand + Axios + SecureStore; login/refresh; hook-based API.
-- **Last updated:** 20/08/2026
+- **Last updated:** 21/08/2026
 - **Target completion:** 05/04/2027
 
 ---
