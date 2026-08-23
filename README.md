@@ -1,14 +1,14 @@
 # React Native Iam Package
 
-Zustand + Axios + SecureStore; login/refresh; hook-based API.
+Zustand + Axios + SecureStore: login/refresh/logout, session restore, web localStorage.
 
 ---
 
 ## 📈 Status
 
-- **Status:** scaffolded (Scaffolded)
-- **Focus:** Zustand + Axios + SecureStore; login/refresh; hook-based API.
-- **Last updated:** 21/08/2026
+- **Status:** active (Active)
+- **Focus:** Zustand + Axios + SecureStore: login/refresh/logout, session restore, web localStorage.
+- **Last updated:** 23/08/2026
 - **Target completion:** 05/04/2027
 
 ---
@@ -116,7 +116,7 @@ npm test
 | Milestone                    | Category              | Target Date | Status     |
 | ---------------------------- | --------------------- | ----------- | ---------- |
 | Scaffold package | React Native | 26/10/2025 | ✅ Done |
-| Core flows (login/refresh/logout) | React Native | 22/03/2027 | ⏳ Planned |
+| Core flows (login/refresh/logout) | React Native | 22/03/2027 | ✅ Done |
 | Docs + usage examples | React Native | 05/04/2027 | ⏳ Planned |
 
 
