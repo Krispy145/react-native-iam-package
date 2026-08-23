@@ -6,7 +6,8 @@ export function useAuth() {
   const login = useAuthStore((s) => s.login);
   const logout = useAuthStore((s) => s.logout);
   const configure = useAuthStore((s) => s.configure);
+  const restore = useAuthStore((s) => s.restore);
   const api = useAuthStore((s) => s.api);
 
-  return { accessToken, isAuthenticated, login, logout, configure, api };
+  return { accessToken, isAuthenticated, login, logout, configure, restore, api };
 }

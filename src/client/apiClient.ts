@@ -1,12 +1,15 @@
-import axios, { AxiosInstance } from 'axios';
+import axios, { AxiosInstance, InternalAxiosRequestConfig } from 'axios';
 import { useAuthStore } from '../store/authStore';
+import { isAuthPath } from '../types';
 
 export function createApiClient(baseURL: string): AxiosInstance {
   const api = axios.create({ baseURL, timeout: 20000 });
 
   api.interceptors.request.use((config) => {
-    const token = useAuthStore.getState().accessToken;
-    if (token) config.headers['Authorization'] = `Bearer ${token}`;
+    if (!isAuthPath(config.url)) {
+      const token = useAuthStore.getState().accessToken;
+      if (token) config.headers['Authorization'] = `Bearer ${token}`;
+    }
     return config;
   });
 
@@ -16,8 +19,13 @@ export function createApiClient(baseURL: string): AxiosInstance {
   api.interceptors.response.use(
     (res) => res,
     async (error) => {
-      const original = error.config;
-      if (error.response?.status === 401 && !original._retry) {
+      const original = error.config as InternalAxiosRequestConfig & { _retry?: boolean };
+      if (
+        error.response?.status === 401 &&
+        original &&
+        !original._retry &&
+        !isAuthPath(original.url)
+      ) {
         original._retry = true;
         const { refresh } = useAuthStore.getState();
 
